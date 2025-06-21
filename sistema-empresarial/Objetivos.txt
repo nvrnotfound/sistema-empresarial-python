@@ -1,0 +1,97 @@
+Cadastro  funcionario e projetos
+
+Regras:
+
+-Os algoritmos de ordenação e busca usados na implementação
+das funcionalidades devem ser explicitamente implementados no
+programa. Não é permitido o uso de funções prontas de ordenação
+e busca já implementada na linguagem de programação escolhida. 
+
+-Caso o programa faça a inserção inicial de uma certa quantidade
+de dados, é preciso garantir: 
+
+*a ordenação inicial dos dados cadastrados dos funcionários
+pelo número funcional.
+
+*a ordenação inicial dos dados cadastrados para os projetos
+pelo nome.
+
+---------------------------------------------------------------
+
+Funcionarios:
+
+-numero funcional unico
+-nome_funcionario
+-salario
+
+Projetos:
+
+-nome_projeto
+-data_inicio
+-data_termino
+-tempo_estimado_projeto
+-valor_estimado
+-numero funcioal do responsavel
+
+----------------------------------------------------------------
+
+funcionarios e projetos mantidos em vetores de tamanho fixo pela chave de ordenacao
+
+vetor funcionarios => numero functional
+numero máximo de funcionários => 500
+
+vetor projetos => nome
+numero maximo de projetos => 2000
+
+----------------------------------------------------------------
+
+Funcionalidades:
+
+-Interface que permita acessar as funcionalidades.
+
+-Chave de ordenacao dos vetores podeser definidade automaticamente ou pelo usuario
+
+-Inserir, remover e alterar dados nos vetores, mantendo a 
+ordenacao pela chave de ordenacao definida a eles. 
+Nao eh permitida a alteracao dessa chave, para que nao haja repeticoes.
+
+--------------------------------------------------------------
+
+Buscas e ordenações:
+
+Realiza busca de um funcionário a partir do número funcional,
+retornando dados do empregado caso esse número seja de um
+empregado válido. Para essa solução utilize um algoritmo de busca
+que seja melhor que O(n).
+
+A empresa concederá um bônus para empregados que estão como
+responsáveis por projetos. busque e liste em ordem
+alfabética os nomes dos funcionários que estejam
+como responsáveis de projetos em andamento.use
+uma solução que seja o mais otimizada possível para os dados
+utilizados e uma ordenação de sua escolha. 
+
+Os funcionários que tenham os maiores salários não irão receber
+o bônus. Dessa forma, liste, os nomes e salários maiores que
+R$10.000,00 em ordem decrescente de salário. Para essa solução
+utilize um algoritmo de ordenação de O(n2). 
+
+-A empresa precisa controlar informações sobre os projetos que
+estão em andamento. busque e liste os projetos que
+não estão terminados e tenham valor estimado acima de
+R$500.000,00. Imprima a lista ordenada pelo valor dos projetos
+usando um algoritmo que tenha a ordem O <=n.log2n. 
+
+-necessário buscar e obter uma listagem dos projetos estejam ainda
+em andamento e já passaram do prazo estimado de entrega, e os que
+já terminaram e foi com atraso. A listagem deve indicar junto
+com o projeto se o projeto está terminado (finalizado) ou em
+andamento (em aberto) e tempo de atraso. Ordene a resposta
+pelo tempo de atraso, usando um algoritmo a sua escolha. 
+
+Utilizando tabelas Hash:
+
+preciso sempre marcar reuniões entre a direção e os gerentes
+de projeto é preciso obter rapidamente os e-mails dos gerentes,
+dessa forma, guarde(insira) os e-mails (trate como string) desses
+gerentes de projeto numa tabela hash estática, usando a implementação de sua escolha.
